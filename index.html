@@ -4,27 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Javascript Quiz</title>
 </head>
 <body>
+    <!-- home "page" -->
     <div id="startContainer" class="container" style="text-align: center;">
         <h2>Welcome to the Javascript Quiz!</h2><br>
-        <button class="btn btn=primary" id="startButton">Start The Quiz!</button>
+        <button class="btn btn-primary" id="startButton">Start The Quiz!</button>
     </div>
-
+    <!-- quiz "page" -->
     <div id="quizContainer" class="container" style="text-align: center; display: none">
         <div id ="question"> <p>Question</p> </div>
             <div id="choices">
-                <button class="btn btn-primary" id="a" onclick="checkAnswer('a')">choice a</button><br>
-                <button class="btn btn-primary" id="b" onclick="checkAnswer('b')">choice b</button><br>
-                <button class="btn btn-primary" id="c" onclick="checkAnswer('c')">choice c</button><br>
-                <button class="btn btn-primary" id="d" onclick="checkAnswer('d')">choice d</button><br>
+                <button class="btn btn-primary" id="a" onclick="checkAnswer('a')">choice a</button><br><br>
+                <button class="btn btn-primary" id="b" onclick="checkAnswer('b')">choice b</button><br><br>
+                <button class="btn btn-primary" id="c" onclick="checkAnswer('c')">choice c</button><br><br>
+                <button class="btn btn-primary" id="d" onclick="checkAnswer('d')">choice d</button><br><br>
             </div>
         </div>
     </div>
-
+    <!-- score results "page" -->
     <div id="scoreResultContainer" class="container" style="text-align: center; display: none">
         <h2>Congrats, you're done!</h2><br>
         <strong>Your final score is <span id="finalScore"></span>.</strong></p></p>
@@ -48,17 +48,18 @@
                 <button class="btn btn-primary" id="playAgainButton" onclick="startNewQuiz(event)">Play Again</button>
                 
     </div>
-
+    <!-- high scores "page" -->
     <div id="highScoreContainer" class="container" style="text-align: center; display: none">
         <h1>High Scores</h1>
-            <ul id="highScoresList" class="container"  style="text-align: center;">
+            <div id="highScoresList" class="container"  style="text-align: center;">
                 
-            </ul>
+            </div></p>
         <button class="btn btn-primary" id="playAgainButton" onclick="startNewQuiz(event)">Play Again</button>
     </div>
 
     <div class="alert alert-light" role="alert" id="answerResult" style="text-align: center;"></div>
-<script src="assets/script.js"></script>
 
+    
+    <script src="assets/script.js"></script>
 </body>
 </html>
